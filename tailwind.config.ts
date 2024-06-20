@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         background: "rgba(var(--background))",
+        main: "rgba(var(--main))",
+
         primary: {
           background: "rgba(var(--primary-backgrond))",
           foreground: "rgba(var(--primary-foreground))",

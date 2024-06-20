@@ -4,9 +4,10 @@
 
 :root {
   --background: 24 24 27;
+  --main: 139 92 246;
 
-  --primary-background: 139 92 246;
-  --primary-foreground: 139 92 246;
+  --primary-background: ;
+  --primary-foreground: 244 244 245;
 
   --secondary-background: 139 92 246;
   --secondary-foreground: 113 113 122;
