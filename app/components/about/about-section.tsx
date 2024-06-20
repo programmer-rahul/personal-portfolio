@@ -3,8 +3,8 @@ export default function AboutSection() {
     <section>
       <div className="space-y-6 flex flex-col">
         <div>
-          <h3 className="text-primary-foreground font-bold text-4xl text-center">
-            Who Am I
+          <h3 className="uppercase text-primary-foreground font-bold text-4xl text-center">
+            Who am i
           </h3>
         </div>
 
