@@ -10,7 +10,7 @@ interface IconButtonProps {
 }
 
 const defaultClasses =
-  "border-2 px-4 py-1 rounded-md text-primary font-semibold hover:opacity-90 flex items-center transition-all hover:scale-105 hover:translate-x-1 cursor-pointer gap-1";
+  "border-2 px-4 py-2 rounded-md text-primary font-semibold hover:opacity-90 flex items-center transition-all hover:scale-105 hover:translate-x-1 cursor-pointer gap-1";
 
 const primaryClasses = "border-transparent bg-main text-primary";
 const secondaryClasses = "border-main bg-transparent text-primary-foreground";

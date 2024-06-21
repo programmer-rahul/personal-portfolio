@@ -1,7 +1,7 @@
 const SKILLS = {
   frontend: [
-    { name: "HTML", image: "/SKILLS/html.svg" },
-    { name: "CSS", image: "/SKILLS/css.svg" },
+    { name: "HTML", image: "/skills/html.svg" },
+    { name: "CSS", image: "/skills/css.svg" },
     { name: "JavaScript", image: "/skills/javascript.svg" },
     { name: "TypeScript", image: "/skills/typescript.svg" },
     { name: "React", image: "/skills/react.svg" },
