@@ -106,10 +106,67 @@
 }
 
 /* to remove default scroll bar  */
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+/* infinite carousel  */
+.carousel {
+  width: 100%;
+  height: var(--card-height);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+
+.carousel .track {
+  width: 100%;
+  height: 100%;
+  min-width: calc(var(--card-width) * var(--card-items));
+  display: flex;
+  position: relative;
+}
+
+.carousel .track .card {
+  width: var(--card-width);
+  height: var(--card-height);
+  position: absolute;
+
+  transition: filter 0.5s;
+  animation: move 10s linear infinite;
+  animation-delay: calc((10s / var(--card-items)) * (var(--card-index) * -1));
+}
+
+@keyframes move {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: calc(var(--card-width) * -1);
+  }
+}
+
+.carousel:hover .card {
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+}
+.carousel .card:hover {
+  filter: grayscale(0);
+}
+
+.carousel[data-reverse="true"] .card {
+  animation: reverseMove 10s linear infinite;
+  animation-delay: calc((10s / var(--card-items)) * (var(--card-index) * -1));
+}
+@keyframes reverseMove {
+  from {
+    left: calc(var(--card-width) * -1);
+  }
+  to {
+    left: 100%;
+  }
 }

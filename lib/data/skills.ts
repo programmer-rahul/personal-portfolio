@@ -1,25 +1,27 @@
-const SKILLS = {
+import { Skills } from "../types/skill";
+
+const SKILLS: Skills = {
   frontend: [
-    { name: "HTML", image: "/skills/html.svg" },
-    { name: "CSS", image: "/skills/css.svg" },
-    { name: "JavaScript", image: "/skills/javascript.svg" },
-    { name: "TypeScript", image: "/skills/typescript.svg" },
-    { name: "React", image: "/skills/react.svg" },
-    { name: "Tailwind", image: "/skills/tailwindcss.svg" },
-    { name: "Next.js", image: "/skills/nextjs.svg" },
+    { name: "HTML", imageUrl: "/skills/html.svg" },
+    { name: "CSS", imageUrl: "/skills/css.svg" },
+    { name: "JavaScript", imageUrl: "/skills/javascript.svg" },
+    { name: "TypeScript", imageUrl: "/skills/typescript.svg" },
+    { name: "React", imageUrl: "/skills/react.svg" },
+    { name: "Tailwind", imageUrl: "/skills/tailwindcss.svg" },
+    { name: "Next.js", imageUrl: "/skills/nextjs.svg" },
   ],
   backend: [
-    { name: "Node.js", image: "/skills/nodejs.svg" },
-    { name: "Express.js", image: "/skills/expressjs.svg" },
-    { name: "MongoDB", image: "/skills/mongodb.svg" },
-    { name: "Firebase", image: "/skills/firebase.svg" },
+    { name: "Node.js", imageUrl: "/skills/nodejs.svg" },
+    { name: "Express.js", imageUrl: "/skills/expressjs.svg" },
+    { name: "MongoDB", imageUrl: "/skills/mongodb.svg" },
+    { name: "Firebase", imageUrl: "/skills/firebase.svg" },
   ],
   tools: [
-    { name: "Git", image: "/skills/git.svg" },
-    { name: "GitHub", image: "/skills/github.svg" },
-    { name: "Postman", image: "/skills/postman.svg" },
-    { name: "VS Code", image: "/skills/vscode.svg" },
-    { name: "Vercel", image: "/skills/vercel.svg" },
+    { name: "Git", imageUrl: "/skills/git.svg" },
+    { name: "GitHub", imageUrl: "/skills/github.svg" },
+    { name: "Postman", imageUrl: "/skills/postman.svg" },
+    { name: "VS Code", imageUrl: "/skills/vscode.svg" },
+    { name: "Vercel", imageUrl: "/skills/vercel.svg" },
   ],
 };
 
