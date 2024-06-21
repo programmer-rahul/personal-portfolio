@@ -32,7 +32,7 @@ export default function AboutSection() {
 
         <div className="flex gap-32 self-center uppercase select-none">
           <div className="flex gap-2">
-            <p className="text-6xl text-main font-bold">01+</p>
+            <p className="text-6xl text-main font-bold">02+</p>
             <div className="flex flex-col items-start tracking-tighter text-xl">
               <span className="text-secondary-foreground">Years Of</span>
               <span className="text-primary-foreground tracking-wider">

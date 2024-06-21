@@ -1,7 +1,7 @@
-const skills = {
+const SKILLS = {
   frontend: [
-    { name: "HTML", image: "/skills/html.svg" },
-    { name: "CSS", image: "/skills/css.svg" },
+    { name: "HTML", image: "/SKILLS/html.svg" },
+    { name: "CSS", image: "/SKILLS/css.svg" },
     { name: "JavaScript", image: "/skills/javascript.svg" },
     { name: "TypeScript", image: "/skills/typescript.svg" },
     { name: "React", image: "/skills/react.svg" },
@@ -23,4 +23,4 @@ const skills = {
   ],
 };
 
-export default skills;
+export default SKILLS;
