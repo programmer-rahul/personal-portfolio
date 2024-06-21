@@ -9,12 +9,19 @@
   --primary-background: ;
   --primary-foreground: 244 244 245;
 
-  --secondary-background: 139 92 246;
+  --secondary-background: 17 24 39;
   --secondary-foreground: 113 113 122;
+
+  --border: 55 65 81;
 }
 
-body {
-  background: rgb(var(--background));
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-primary-foreground;
+  }
 }
 
 .typewriter-text {
@@ -96,4 +103,13 @@ body {
   85% {
     width: calc(100% + 8px);
   }
+}
+
+/* to remove default scroll bar  */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

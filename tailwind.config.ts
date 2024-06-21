@@ -20,6 +20,8 @@ const config: Config = {
           background: "rgba(var(--secondary-background))",
           foreground: "rgba(var(--secondary-foreground))",
         },
+
+        border: "rgba(var(--border))",
       },
     },
   },

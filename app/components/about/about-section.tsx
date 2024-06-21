@@ -11,7 +11,7 @@ export default function AboutSection() {
         <div>
           <div className="text-secondary-foreground px-20 space-y-3">
             <p className="text-center">
-              Hello, I'm Rahul, a passionate and seasoned programmer deeply
+              Hello, I&apos;m Rahul, a passionate and seasoned programmer deeply
               immersed in the world of technology. With a strong foundation in
               JavaScript, I excel in crafting dynamic and innovative solutions
               across various web application frameworks. I have a keen interest

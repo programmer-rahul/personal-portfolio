@@ -1,5 +1,3 @@
-"use client";
-
 import skills from "@/lib/data/skills";
 import Image from "next/image";
 

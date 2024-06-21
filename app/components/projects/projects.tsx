@@ -11,6 +11,7 @@ export default function Projects() {
             image={image}
             description={description}
             isLeft={index % 2 === 1}
+            key={index}
           />
         ))}
       </div>
