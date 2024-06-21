@@ -20,16 +20,16 @@ const SOCIELS: Sociel[] = [
     href: "mailto:" + GMAIL_LINK,
   },
   {
+    name: "linkedin",
+    imagePath: "/svg/linkedin.svg",
+    text: "Rahul Singh",
+    href: LINKEDIN_LINK,
+  },
+  {
     name: "instagram",
     imagePath: "/svg/instagram.svg",
     text: "rahul262830",
     href: INSTAGRAM_LINK,
-  },
-  {
-    name: "linkedin",
-    imagePath: "/svg/linkedin.svg",
-    text: "linkedin",
-    href: LINKEDIN_LINK,
   },
 ];
 
