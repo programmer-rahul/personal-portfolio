@@ -9,12 +9,16 @@ import SkillsSection from "./components/skills/skills-section";
 export default function Home() {
   return (
     <main className="w-full h-full">
-      <div className="px-60">
-        <Header />
-        <HomeSection />
+      <div>
+        <div className="px-60">
+          <Header />
+          <HomeSection />
+        </div>
         <AboutSection />
-        <SkillsSection />
-        <ProjectsSection />
+        <div className="px-60">
+          <SkillsSection />
+          <ProjectsSection />
+        </div>
         <ContactSection />
         <Footer />
       </div>

@@ -3,10 +3,10 @@ import TypeWriterText from "./type-writer-text";
 
 export default function IntroPanel() {
   return (
-    <div className="w-1/2 space-y-4 select-none">
-      <h2 className="text-bold text-7xl text-main">Rahul</h2>
+    <div className="w-1/2 select-none space-y-4">
+      <h2 className="text-7xl font-bold text-main">Name</h2>
       <TypeWriterText />
-      <p className="text-primary-foreground text-xl tracking-tight">
+      <p className="font-secondary text-xl tracking-tight text-primary-foreground">
         Passionate self-taught developer skilled in problem-solving, quick at
         finding the best solutions online, and dedicated to continuous learning
         and impactful projects.

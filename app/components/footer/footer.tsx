@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="py-4 border-t">
-      <div className="p-4 flex justify-around uppercase">
+    <footer className="border-t bg-main/30 py-4">
+      <div className="flex justify-around p-4 uppercase">
         <div className="text-center">
           <p>
             &#169; Designed And Developed By{" "}
-            <b className="hover:text-main transition hover:underline hover:cursor-pointer">
+            <b className="transition hover:cursor-pointer hover:text-main hover:underline">
               <a href={GITHUB_LINK} target="_blank">
                 Rahul
               </a>
@@ -18,7 +18,7 @@ export default function Footer() {
 
         <div>
           <a
-            className="flex gap-2 items-center hover:cursor-pointer"
+            className="flex items-center gap-2 hover:cursor-pointer"
             href={GITHUB_LINK + "/personal-portfolio"}
             target="_blank"
           >
@@ -28,7 +28,7 @@ export default function Footer() {
               height={20}
               alt="github"
             />
-            <p className="hover:text-main transition">Give a star</p>
+            <p className="transition hover:text-main">Give a star</p>
           </a>
         </div>
       </div>

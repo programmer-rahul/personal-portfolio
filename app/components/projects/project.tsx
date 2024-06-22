@@ -15,23 +15,23 @@ export default function Project({
   isLeft,
 }: ProjectProps) {
   return (
-    <div className={cn("flex gap-4 w-full", isLeft && "flex-row-reverse")}>
+    <div className={cn("flex w-full gap-4", isLeft && "flex-row-reverse")}>
       {/* info */}
-      <div className="w-[500px] border-2 border-secondary-foreground p-2 flex flex-col gap-4 self-start  rounded-md">
-        <p className="text-3xl text-main font-semibold">{name}</p>
-        <span className="text-secondary-foreground text-xl leading-6">
+      <div className="flex w-[500px] flex-col gap-4 self-start rounded-md border-2 border-secondary-foreground p-2">
+        <p className="text-3xl font-semibold text-main">{name}</p>
+        <span className="font-secondary text-xl leading-6 text-secondary-foreground">
           {description}
         </span>
       </div>
 
       {/* display  */}
-      <div className="w-full border-2 border-secondary-foreground aspect-video rounded-md">
+      <div className="aspect-video w-full rounded-md border-2 border-secondary-foreground">
         <Image
           src={image}
           width={100}
           height={100}
           alt="project-main"
-          className="rounded-md w-full h-full object-cover"
+          className="h-full w-full rounded-md object-cover"
         />
       </div>
     </div>

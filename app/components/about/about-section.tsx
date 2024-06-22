@@ -1,15 +1,15 @@
 export default function AboutSection() {
   return (
-    <section>
-      <div className="space-y-6 flex flex-col">
+    <section className="bg-main/30 p-4 px-60">
+      <div className="flex flex-col space-y-6">
         <div>
-          <h3 className="uppercase text-primary-foreground font-bold text-4xl text-center">
+          <h3 className="text-center text-6xl font-bold uppercase text-primary-foreground">
             Who am i
           </h3>
         </div>
 
         <div>
-          <div className="text-secondary-foreground px-20 space-y-3">
+          <div className="space-y-3 px-20 font-secondary text-secondary-foreground">
             <p className="text-center">
               Hello, I&apos;m Rahul, a passionate and seasoned programmer deeply
               immersed in the world of technology. With a strong foundation in
@@ -30,22 +30,22 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="flex gap-32 self-center uppercase select-none">
+        <div className="flex select-none gap-32 self-center uppercase">
           <div className="flex gap-2">
-            <p className="text-6xl text-main font-bold">02+</p>
-            <div className="flex flex-col items-start tracking-tighter text-xl">
+            <p className="text-6xl font-bold text-main">02+</p>
+            <div className="flex flex-col items-start text-xl tracking-tighter">
               <span className="text-secondary-foreground">Years Of</span>
-              <span className="text-primary-foreground tracking-wider">
+              <span className="tracking-wider text-primary-foreground">
                 Coding
               </span>
             </div>
           </div>
 
           <div className="flex gap-2">
-            <p className="text-6xl text-main font-bold">07+</p>
-            <div className="flex flex-col items-start tracking-tighter text-xl">
+            <p className="text-6xl font-bold text-main">07+</p>
+            <div className="flex flex-col items-start text-xl tracking-tighter">
               <span className="text-secondary-foreground">Completed</span>
-              <span className="text-primary-foreground tracking-wider">
+              <span className="tracking-wider text-primary-foreground">
                 Projects
               </span>
             </div>

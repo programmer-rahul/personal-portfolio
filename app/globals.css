@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: 24, 24, 27;
+  --background: 14, 20, 27;
   --main: 139, 92, 246;
 
   --primary-background: ;
@@ -20,7 +20,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-primary-foreground;
+    @apply bg-background text-primary-foreground font-primary;
   }
 }
 

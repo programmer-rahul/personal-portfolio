@@ -4,10 +4,10 @@ export default function ContactSocielLinks() {
   return (
     <div className="space-y-16">
       <div className="space-y-2">
-        <h4 className="text-3xl text-main font-semibold">
+        <h4 className="text-3xl font-semibold text-main">
           Have a project in mind?
         </h4>
-        <p className="text-xl text-secondary-foreground">
+        <p className="font-secondary text-xl text-secondary-foreground">
           Let's collaborate and bring your ideas to life. I'm excited to work on
           innovative projects and explore new opportunities.
         </p>

@@ -5,7 +5,7 @@ export default function SkillsSection() {
     <section>
       <div className="mt-20 w-full space-y-6 flex flex-col">
         <div>
-          <h3 className="uppercase text-primary-foreground font-bold text-4xl text-center">
+          <h3 className="uppercase text-primary-foreground font-bold text-6xl text-center">
             Skills
           </h3>
         </div>

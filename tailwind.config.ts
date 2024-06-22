@@ -23,6 +23,10 @@ const config: Config = {
 
         border: "rgba(var(--border))",
       },
+      fontFamily: {
+        primary: "var(--font-primary)",
+        secondary: "var(--font-secondary)",
+      },
     },
   },
   plugins: [],
