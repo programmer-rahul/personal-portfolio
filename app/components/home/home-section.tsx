@@ -4,7 +4,7 @@ import IntroPanel from "./intro-panel";
 export default function HomeSection() {
   return (
     <section>
-      <div className="flex h-[720px] items-center">
+      <div className="flex items-center py-40">
         <IntroPanel />
 
         <BlobAnimation />

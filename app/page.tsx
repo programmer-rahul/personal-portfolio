@@ -5,21 +5,24 @@ import Header from "./components/header/header";
 import HomeSection from "./components/home/home-section";
 import ProjectsSection from "./components/projects/projects-section";
 import SkillsSection from "./components/skills/skills-section";
+import SectionSeperatorBorder from "./components/ui/section-seperator-border";
 
 export default function Home() {
   return (
-    <main className="w-full h-full">
+    <main className="h-full w-full">
       <div>
         <div className="px-60">
           <Header />
           <HomeSection />
-        </div>
-        <AboutSection />
-        <div className="px-60">
+          <SectionSeperatorBorder />
+          <AboutSection />
+          <SectionSeperatorBorder />
           <SkillsSection />
+          <SectionSeperatorBorder />
           <ProjectsSection />
+          <SectionSeperatorBorder />
+          <ContactSection />
         </div>
-        <ContactSection />
         <Footer />
       </div>
     </main>

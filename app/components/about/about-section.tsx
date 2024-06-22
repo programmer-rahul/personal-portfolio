@@ -1,7 +1,7 @@
 export default function AboutSection() {
   return (
-    <section className="p-4 px-60">
-      <div className="flex flex-col space-y-6">
+    <section>
+      <div className="flex flex-col space-y-6 py-16">
         <div>
           <h3 className="text-center text-6xl font-bold uppercase text-primary-foreground">
             Who am i

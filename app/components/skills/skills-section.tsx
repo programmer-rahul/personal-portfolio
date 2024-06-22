@@ -3,9 +3,9 @@ import Skills from "./skills";
 export default function SkillsSection() {
   return (
     <section>
-      <div className="mt-20 w-full space-y-6 flex flex-col">
+      <div className="flex w-full flex-col space-y-6 py-16">
         <div>
-          <h3 className="uppercase text-primary-foreground font-bold text-6xl text-center">
+          <h3 className="text-center text-6xl font-bold uppercase text-primary-foreground">
             Skills
           </h3>
         </div>
