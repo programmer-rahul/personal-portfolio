@@ -18,7 +18,7 @@ export default function Footer() {
 
         <div>
           <a
-            className="flex gap-2 items-center hover:grayscale transition hover:cursor-pointer"
+            className="flex gap-2 items-center hover:cursor-pointer"
             href={GITHUB_LINK + "/personal-portfolio"}
             target="_blank"
           >

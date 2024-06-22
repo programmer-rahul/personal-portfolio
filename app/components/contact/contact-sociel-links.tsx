@@ -7,7 +7,7 @@ export default function ContactSocielLinks() {
         <h4 className="text-3xl text-main font-semibold">
           Have a project in mind?
         </h4>
-        <p className="text-xl text-primary-foreground">
+        <p className="text-xl text-secondary-foreground">
           Let's collaborate and bring your ideas to life. I'm excited to work on
           innovative projects and explore new opportunities.
         </p>

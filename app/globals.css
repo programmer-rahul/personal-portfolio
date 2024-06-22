@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: 24 24 27;
-  --main: 139 92 246;
+  --background: 24, 24, 27;
+  --main: 139, 92, 246;
 
   --primary-background: ;
-  --primary-foreground: 244 244 245;
+  --primary-foreground: 244, 244, 245;
 
-  --secondary-background: 17 24 39;
-  --secondary-foreground: 113 113 122;
+  --secondary-background: 17, 24, 39;
+  --secondary-foreground: 113, 113, 122;
 
-  --border: 55 65 81;
+  --border: 55, 65, 81;
 }
 
 @layer base {
