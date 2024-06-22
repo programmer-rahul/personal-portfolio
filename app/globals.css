@@ -173,3 +173,42 @@
     left: 100%;
   }
 }
+
+/* blob animation  */
+.blob {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(
+    64deg,
+    rgba(var(--main)) 23%,
+    rgba(var(--main)) 23%,
+    rgba(var(--typewriter)) 80%
+  );
+
+  border-radius: 28% 72% 22% 78% / 39% 23% 77% 61%;
+  transform: rotate(0deg);
+  will-change: border-radius, transform;
+
+  animation:
+    blob 3s linear infinite,
+    spin 10s linear infinite;
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    border-radius: 28% 72% 22% 78% / 39% 23% 77% 61%;
+  }
+  50% {
+    border-radius: 72% 28% 50% 50% / 55% 26% 74% 45%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}

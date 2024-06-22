@@ -9,7 +9,7 @@ export default function AboutSection() {
         </div>
 
         <div>
-          <div className="text-xl space-y-3 px-20 font-secondary text-primary-foreground/60">
+          <div className="space-y-3 px-20 font-secondary text-xl text-primary-foreground/60">
             <p className="text-center">
               Hello, I&apos;m Rahul, a{" "}
               <span className="text-typewriter">

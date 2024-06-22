@@ -34,7 +34,7 @@ export default function InfiniteCarousel({
               alt="skill-image"
               className="w-10"
             />
-            <p className="text-secondary-foreground text-xs tracking-tighter">
+            <p className="text-primary-foreground tracking-tighter">
               {skill.name}
             </p>
           </div>
