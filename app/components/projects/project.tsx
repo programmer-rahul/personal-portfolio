@@ -1,31 +1,20 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import ProjectTitleButtons from "../ui/project-title-btns";
 
 interface ProjectProps {
   name: string;
   description: string;
   image: string;
-  isLeft: boolean;
 }
 
-export default function Project({
-  name,
-  description,
-  image,
-  isLeft,
-}: ProjectProps) {
+export default function Project({ name, description, image }: ProjectProps) {
   return (
-    <div className={cn("flex w-full gap-4", isLeft && "flex-row-reverse")}>
-      {/* info */}
-      <div className="flex w-[500px] flex-col gap-4 self-start rounded-md border-2 border-secondary-foreground p-2">
-        <p className="text-3xl font-semibold text-main">{name}</p>
-        <span className="font-secondary text-xl leading-6 text-secondary-foreground">
-          {description}
-        </span>
-      </div>
+    <div className={cn("flex w-[48%] flex-col rounded-lg border bg-[#1e293b]")}>
+      <ProjectTitleButtons />
 
       {/* display  */}
-      <div className="aspect-video w-full rounded-md border-2 border-secondary-foreground">
+      <div className="aspect-video w-full rounded-md px-2 py-2">
         <Image
           src={image}
           width={100}
@@ -33,6 +22,16 @@ export default function Project({
           alt="project-main"
           className="h-full w-full rounded-md object-cover"
         />
+      </div>
+
+      {/* info */}
+      <div className="px-3 pb-3">
+        <p className="text-3xl font-semibold text-main">{name}</p>
+        <div className="flex flex-col gap-2 self-start rounded-md">
+          <span className="font-secondary text-xl leading-6 text-secondary-foreground">
+            {description}
+          </span>
+        </div>
       </div>
     </div>
   );
