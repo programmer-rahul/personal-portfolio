@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         background: "rgba(var(--background))",
         main: "rgba(var(--main))",
+        typewriter: "rgba(var(--typewriter))",
 
         primary: {
           background: "rgba(var(--primary-backgrond))",

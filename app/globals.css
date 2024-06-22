@@ -5,6 +5,7 @@
 :root {
   --background: 14, 20, 27;
   --main: 139, 92, 246;
+  --typewriter: 34, 197, 94;
 
   --primary-background: ;
   --primary-foreground: 244, 244, 245;
@@ -20,7 +21,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-primary-foreground font-primary;
+    @apply bg-background font-primary text-primary-foreground;
   }
 }
 
@@ -36,7 +37,7 @@
 
 .typewriter-text span::before {
   content: "Web Developer";
-  color: rgb(34 197 94);
+  color: rgba(var(--typewriter));
   animation: words 20s infinite;
 }
 
@@ -44,15 +45,17 @@
   content: "";
   position: absolute;
   height: 100%;
-  background-color: rgb(var(--background));
-  border-left: 2px solid rgb(34 197 94);
+  background-color: rgba(var(--background));
+  border-left: 2px solid rgba(var(--typewriter));
   right: -8px;
-  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+  animation:
+    cursor 0.8s infinite,
+    typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
   to {
-    border-left: 2px solid rgb(34 197 94) 00;
+    border-left: 2px solid rgba(var(--typewriter));
   }
 }
 
