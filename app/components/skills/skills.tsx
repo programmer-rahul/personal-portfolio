@@ -5,34 +5,35 @@ import InfiniteCarousel from "../ui/infinite-carousel";
 
 export default function Skills() {
   return (
-    <div className="skills flex flex-col gap-4 items-center">
+    <div className="skills flex flex-col items-center gap-20">
       {/* frontend  */}
-      <div className="space-y-4">
-        <h4 className="text-secondary-foreground font-semibold text-center">
-          Frontend
-        </h4>
-        <div>
-          <InfiniteCarousel data={skills.frontend} />
+      <div className="w-4/5 self-center">
+        <div className="w-full space-y-4">
+          <h4 className="text-center font-semibold text-typewriter">
+            Frontend
+          </h4>
+          <div>
+            <InfiniteCarousel data={skills.frontend} />
+          </div>
         </div>
       </div>
 
-      {/* backend  */}
-      <div className="space-y-4">
-        <h4 className="text-secondary-foreground font-semibold text-center">
-          Backend
-        </h4>
-        <div>
-          <InfiniteCarousel data={skills.backend} reverse={true} />
+      {/* others  */}
+      <div className="flex w-full justify-between">
+        {/* backend  */}
+        <div className="w-[44%] space-y-4">
+          <h4 className="text-center font-semibold text-typewriter">Backend</h4>
+          <div>
+            <InfiniteCarousel data={skills.backend} reverse={true} />
+          </div>
         </div>
-      </div>
 
-      {/* tools  */}
-      <div className="space-y-4">
-        <h4 className="text-secondary-foreground font-semibold text-center">
-          Tools
-        </h4>
-        <div>
-          <InfiniteCarousel data={skills.tools} />
+        {/* tools  */}
+        <div className="w-[44%] space-y-4">
+          <h4 className="text-center font-semibold text-typewriter">Tools</h4>
+          <div>
+            <InfiniteCarousel data={skills.tools} />
+          </div>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ export default function InfiniteCarousel({
       <div className="track">
         {data.map((skill, index) => (
           <div
-            className="card grid place-content-center place-items-center gap-1 border border-secondary-foreground rounded-md cursor-pointer bg-gray-900"
+            className="card grid cursor-pointer place-content-center place-items-center gap-1 rounded-md border border-secondary-foreground bg-gray-900 hover:border-main"
             key={index}
             style={{ "--card-index": index + 1 } as React.CSSProperties}
           >
@@ -34,7 +34,7 @@ export default function InfiniteCarousel({
               alt="skill-image"
               className="w-10"
             />
-            <p className="text-primary-foreground tracking-tighter">
+            <p className="tracking-tighter text-primary-foreground">
               {skill.name}
             </p>
           </div>
