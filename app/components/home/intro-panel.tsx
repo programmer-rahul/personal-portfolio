@@ -4,7 +4,7 @@ import LanguagesImageBg from "../ui/languages-image-bg";
 
 export default function IntroPanel() {
   return (
-    <div className="relative w-1/2 select-none space-y-4">
+    <div className="relative w-1/2 select-none space-y-7">
       <h2 className="text-7xl font-bold text-main">Name</h2>
       <TypeWriterText />
       <p className="font-secondary text-xl tracking-tight text-primary-foreground">

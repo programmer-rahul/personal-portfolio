@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Sofia_Sans, Playpen_Sans } from "next/font/google";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 
 export const metadata: Metadata = {
   title: "Rahul - Full Stack Developer",
@@ -31,7 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="no-scrollbar">
       <body className={cn(primaryFont.variable, secondaryFont.variable)}>
-        {children}
+        <main className="h-full w-full">
+          <Header />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );

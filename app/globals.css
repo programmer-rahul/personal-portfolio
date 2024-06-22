@@ -25,6 +25,10 @@
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .typewriter-text {
   font-weight: 600;
   min-width: 280px;
