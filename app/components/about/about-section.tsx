@@ -11,6 +11,7 @@ export default function AboutSection() {
         <AboutText />
 
         <AboutExp />
+        
       </div>
     </section>
   );
