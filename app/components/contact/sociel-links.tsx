@@ -23,7 +23,7 @@ export default function SocielLinks() {
 function SocielLink({ name, text, href, imagePath }: Sociel) {
   return (
     <a
-      className="flex items-center gap-1 self-start transition hover:grayscale"
+      className="flex items-center gap-1 xl:gap-2 self-start transition hover:grayscale"
       href={href}
       target="_blank"
     >
@@ -32,9 +32,9 @@ function SocielLink({ name, text, href, imagePath }: Sociel) {
         width={40}
         height={40}
         alt="sociel-icons"
-        className="w-8 md:w-10"
+        className="w-8 md:w-10 xl:w-12"
       />
-      <p className="text-base font-semibold text-primary-foreground md:text-xl">
+      <p className="text-base xl:text-2xl font-semibold text-primary-foreground md:text-xl">
         {text}
       </p>
     </a>
