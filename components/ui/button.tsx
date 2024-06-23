@@ -10,7 +10,7 @@ interface IconButtonProps {
 }
 
 const defaultClasses =
-  "border-2 text-base px-2 py-[.1rem] sm:py-1 sm:px-3 md:text-xl rounded-md text-primary font-semibold hover:opacity-90 flex items-center transition-all hover:scale-105 hover:translate-x-1 cursor-pointer gap-1";
+  "border-2 text-base px-2 py-[.1rem] sm:py-1 sm:px-3 md:text-xl 2xl:text-2xl rounded-md text-primary font-semibold hover:opacity-90 flex items-center transition-all hover:scale-105 hover:translate-x-1 cursor-pointer gap-1";
 
 const primaryClasses = "border-transparent bg-main text-primary";
 const secondaryClasses = "border-main bg-transparent text-primary-foreground";
@@ -34,7 +34,7 @@ export default function Button({
           width={22}
           height={22}
           alt="resume-download-btn"
-          className="w-4"
+          className="w-4 2xl:w-6"
         />
       )}
     </div>
