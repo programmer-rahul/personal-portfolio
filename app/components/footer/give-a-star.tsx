@@ -16,7 +16,9 @@ export default function GiveAStar() {
           alt="github"
           className="w-4"
         />
-        <p className="text-xs transition hover:text-main">Give a star</p>
+        <p className="text-xs transition hover:text-main md:text-lg">
+          Give a star
+        </p>
       </a>
     </div>
   );

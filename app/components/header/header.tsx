@@ -5,7 +5,7 @@ import NavBar from "./nav-bar";
 export default function Header() {
   return (
     <header>
-      <div className="flex justify-between p-2">
+      <div className="flex justify-between p-2 md:justify-center">
         {/* navigation links  */}
         <NavBar />
 

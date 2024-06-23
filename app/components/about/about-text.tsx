@@ -1,6 +1,6 @@
 export default function AboutText() {
   return (
-    <div className="space-y-3 font-secondary text-base text-secondary-foreground text-justify leading-6 tracking-tight">
+    <div className="space-y-3 font-secondary text-base text-secondary-foreground text-justify leading-6 tracking-tight md:text-xl">
       <p>
         Hello, I&apos;m Rahul, a{" "}
         <span className="text-typewriter">

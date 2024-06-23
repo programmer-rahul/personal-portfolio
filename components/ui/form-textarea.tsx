@@ -10,13 +10,13 @@ interface FormTextAreaProps {
 export default function FormTextArea({ value, onChange }: FormTextAreaProps) {
   return (
     <div>
-      <label htmlFor="message" className="text-base text-primary-foreground">
+      <label htmlFor="message" className="text-base md:text-xl text-primary-foreground">
         Message
       </label>
       <textarea
         name=""
         id="message"
-        className="block h-36 w-full rounded-md border bg-transparent p-1 text-primary-foreground outline-none focus:border-main"
+        className="block h-36 w-full rounded-md border bg-transparent p-1 text-primary-foreground outline-none focus:border-main md:text-xl"
         value={value}
         onChange={onChange}
       ></textarea>

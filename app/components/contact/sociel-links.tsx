@@ -32,9 +32,11 @@ function SocielLink({ name, text, href, imagePath }: Sociel) {
         width={40}
         height={40}
         alt="sociel-icons"
-        className="w-8"
+        className="w-8 md:w-10"
       />
-      <p className="text-base font-semibold text-primary-foreground">{text}</p>
+      <p className="text-base font-semibold text-primary-foreground md:text-xl">
+        {text}
+      </p>
     </a>
   );
 }
