@@ -14,13 +14,11 @@ export default function InfiniteCarousel({
       data-reverse={reverse}
       style={
         {
-          "--card-width": "120px",
-          "--card-height": "120px",
           "--card-items": data.length,
         } as React.CSSProperties
       }
     >
-      <div className="track">
+      <div className="track h-full">
         {data.map((skill, index) => (
           <div
             className="card grid cursor-pointer place-content-center place-items-center gap-1 rounded-md border border-secondary-foreground bg-gray-900 hover:border-main"
@@ -32,9 +30,9 @@ export default function InfiniteCarousel({
               width={10}
               height={10}
               alt="skill-image"
-              className="w-10"
+              className="w-8 md:w-12"
             />
-            <p className="tracking-tighter text-primary-foreground">
+            <p className="tracking-tighter text-primary-foreground md:text-xl">
               {skill.name}
             </p>
           </div>

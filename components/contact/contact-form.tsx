@@ -13,8 +13,8 @@ export default function ContactForm() {
   });
 
   return (
-    <form>
-      <div className="p-4 shadow-md space-y-6 rounded-md w-[700px] bg-secondary-background">
+    <form className="w-full xl:w-5/12">
+      <div className="rounded-md bg-secondary-background p-2 shadow-md md:p-3">
         <div className="flex flex-col gap-4">
           <FormInput
             type="email"
