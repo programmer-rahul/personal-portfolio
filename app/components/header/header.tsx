@@ -8,7 +8,7 @@ export default function Header() {
         {/* navigation links  */}
         <NavBar />
 
-        <div className="absolute -top-1/4 left-1/3">
+        <div className="absolute -top-1/4 left-1/3 -z-10">
           <CircularLightEffect />
         </div>
       </div>
