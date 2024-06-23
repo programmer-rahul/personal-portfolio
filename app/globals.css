@@ -124,8 +124,11 @@
 
 /* infinite carousel  */
 .carousel {
+  --card-width: 80px;
+  --card-height: 80px;
+
   width: 100%;
-  height: var(--card-height);
+  height: calc(var(--card-height));
   overflow: hidden;
   mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
 }
@@ -175,6 +178,19 @@
   }
   to {
     left: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    --card-width: 150px;
+    --card-height: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel {
+    --card-width: 130px;
+    --card-height: 130px;
   }
 }
 

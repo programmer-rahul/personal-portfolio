@@ -4,9 +4,9 @@ import IntroPanel from "./intro-panel";
 export default function HomeSection() {
   return (
     <section>
-      <div className="flex flex-col items-center justify-center pt-20 pb-10 sm:py-20">
+      <div className="flex flex-col items-center justify-center pb-10 pt-20 sm:py-20 lg:flex-row lg:px-10 lg:py-40">
         <IntroPanel />
-        <div className="-mt-10 -z-10">
+        <div className="-z-10 -mt-10">
           <BlobAnimation />
         </div>
       </div>
