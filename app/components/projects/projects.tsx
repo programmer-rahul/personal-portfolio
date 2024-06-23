@@ -3,8 +3,8 @@ import PROJECTS from "@/lib/data/projects";
 
 export default function Projects() {
   return (
-    <div className="projects py-8">
-      <div className="flex flex-wrap justify-center gap-4 p-2">
+    <div className="projects py-2">
+      <div className="flex flex-wrap justify-center gap-4">
         {PROJECTS.map(({ name, image, description }, index) => (
           <Project
             name={name}

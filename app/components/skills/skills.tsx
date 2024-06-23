@@ -5,9 +5,9 @@ import InfiniteCarousel from "../ui/infinite-carousel";
 
 export default function Skills() {
   return (
-    <div className="skills flex flex-col items-center gap-20">
+    <div className="skills flex flex-col items-center gap-8">
       {/* frontend  */}
-      <div className="w-4/5 self-center">
+      <div className="w-full self-center">
         <div className="w-full space-y-4">
           <h4 className="text-center font-semibold text-typewriter">
             Frontend
@@ -19,9 +19,9 @@ export default function Skills() {
       </div>
 
       {/* others  */}
-      <div className="flex w-full justify-between">
+      <div className="flex w-full flex-col justify-between gap-8">
         {/* backend  */}
-        <div className="w-[44%] space-y-4">
+        <div className="w-full space-y-4">
           <h4 className="text-center font-semibold text-typewriter">Backend</h4>
           <div>
             <InfiniteCarousel data={skills.backend} reverse={true} />
@@ -29,7 +29,7 @@ export default function Skills() {
         </div>
 
         {/* tools  */}
-        <div className="w-[44%] space-y-4">
+        <div className="w-full space-y-4">
           <h4 className="text-center font-semibold text-typewriter">Tools</h4>
           <div>
             <InfiniteCarousel data={skills.tools} />

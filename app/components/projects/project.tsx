@@ -10,7 +10,7 @@ interface ProjectProps {
 
 export default function Project({ name, description, image }: ProjectProps) {
   return (
-    <div className={cn("flex w-[48%] flex-col rounded-lg border bg-[#1e293b]")}>
+    <div className={cn("flex w-full flex-col rounded-lg border bg-[#1e293b]")}>
       <ProjectTitleButtons />
 
       {/* display  */}
@@ -25,10 +25,10 @@ export default function Project({ name, description, image }: ProjectProps) {
       </div>
 
       {/* info */}
-      <div className="px-3 pb-3">
-        <p className="text-3xl font-semibold text-main">{name}</p>
+      <div className="px-2 pb-2">
+        <p className="text-2xl font-semibold text-main">{name}</p>
         <div className="flex flex-col gap-2 self-start rounded-md">
-          <span className="font-secondary text-xl leading-6 text-secondary-foreground">
+          <span className="font-secondary text-base leading-6 text-secondary-foreground">
             {description}
           </span>
         </div>

@@ -14,8 +14,8 @@ export default function InfiniteCarousel({
       data-reverse={reverse}
       style={
         {
-          "--card-width": "120px",
-          "--card-height": "120px",
+          "--card-width": "80px",
+          "--card-height": "80px",
           "--card-items": data.length,
         } as React.CSSProperties
       }
@@ -32,7 +32,7 @@ export default function InfiniteCarousel({
               width={10}
               height={10}
               alt="skill-image"
-              className="w-10"
+              className="w-8"
             />
             <p className="tracking-tighter text-primary-foreground">
               {skill.name}

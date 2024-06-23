@@ -14,7 +14,7 @@ export default function ContactForm() {
 
   return (
     <form>
-      <div className="p-4 shadow-md space-y-6 rounded-md w-[700px] bg-secondary-background">
+      <div className="w-full rounded-md bg-secondary-background p-2 shadow-md">
         <div className="flex flex-col gap-4">
           <FormInput
             type="email"

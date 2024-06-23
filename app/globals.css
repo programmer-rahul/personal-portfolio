@@ -180,8 +180,6 @@
 
 /* blob animation  */
 .blob {
-  width: 400px;
-  height: 400px;
   background: linear-gradient(
     64deg,
     rgba(var(--main)) 23%,

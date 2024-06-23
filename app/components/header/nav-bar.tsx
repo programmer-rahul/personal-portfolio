@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <nav>
+    <nav className="hidden">
       <ul className="z-10 flex gap-14 text-xl text-secondary-foreground">
         <li>
           <Link href="/">Home</Link>

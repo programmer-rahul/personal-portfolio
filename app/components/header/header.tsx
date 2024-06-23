@@ -4,11 +4,11 @@ import NavBar from "./nav-bar";
 export default function Header() {
   return (
     <header>
-      <div className="grid place-content-center p-4">
+      <div className="flex justify-center border p-2">
         {/* navigation links  */}
         <NavBar />
 
-        <div className="absolute -top-1/4 left-1/3 -z-10">
+        <div className="absolute -top-40 -z-10 border">
           <CircularLightEffect />
         </div>
       </div>
