@@ -1,24 +1,24 @@
 const PROJECTS = [
   {
-    name: "Dev Sync",
+    name: "DevSync",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore expedita doloremque consequuntur.",
+      "DevSync is your solution for real-time project collaboration. Create and join projects, edit code together, and manage your workspace with ease. Enhance your teamwork today.",
 
-    image: "/projects/project1/main.svg",
+    image: "/projects/project1/main.png",
   },
   {
-    name: "Dev Sync",
+    name: "ColorCraft",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore expedita doloremque consequuntur.",
+      "ColorCraft is a user-friendly gradient generator tool that helps designers and developers create stunning color gradients quickly and easily. It offers intuitive customization options to elevate web and graphic design projects.",
 
-    image: "/projects/project1/main.svg",
+    image: "/projects/project2/main.png",
   },
   {
-    name: "Dev Sync",
+    name: "Snaky",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore expedita doloremque consequuntur.",
+      "Snaky offers a modern take on the classic Snake game. Navigate your snake to eat food and grow longer, but avoid hitting the walls or yourself to keep playing.",
 
-    image: "/projects/project1/main.svg",
+    image: "/projects/project3/main.png",
   },
 ];
 
