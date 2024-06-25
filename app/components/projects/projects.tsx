@@ -5,11 +5,12 @@ export default function Projects() {
   return (
     <div className="projects py-2">
       <div className="flex flex-wrap justify-center gap-4">
-        {PROJECTS.map(({ name, image, description }, index) => (
+        {PROJECTS.map(({ name, imageUrl, description, urls }, index) => (
           <Project
             name={name}
-            image={image}
+            imageUrl={imageUrl}
             description={description}
+            urls={urls}
             key={index}
           />
         ))}
