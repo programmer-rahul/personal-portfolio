@@ -6,6 +6,7 @@ import FormInput from "../ui/form-input";
 import IconButton from "../ui/button";
 import { ContactFormErrors, ContactFormValues } from "@/lib/types/contact";
 import contactFormValidation from "@/lib/validation/contact-form-validations";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const [formValues, setFormValues] = useState<ContactFormValues>({
@@ -19,7 +20,7 @@ export default function ContactForm() {
     message: null,
   });
 
-  const handleSendEmail = (
+  const handleSendEmail = async (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
   ) => {
     event.preventDefault();
@@ -28,6 +29,28 @@ export default function ContactForm() {
 
     setFormErrors(error);
     if (!isValid) return;
+
+    // send mail
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+
+    try {
+      const response = await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_email: formValues.email,
+          subject: formValues.subject,
+          message: formValues.message,
+        },
+        { publicKey },
+      );
+      console.log("Email send successfully", response);
+    } catch (error) {
+      console.log("error in email sending", error);
+    }
   };
 
   return (
