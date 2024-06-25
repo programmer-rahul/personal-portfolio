@@ -208,8 +208,8 @@
   will-change: border-radius, transform;
 
   animation:
-    blob 3s linear infinite,
-    spin 10s linear infinite;
+    blob 2s ease-in infinite,
+    spin 9s alternate-reverse infinite;
 }
 
 @keyframes blob {
