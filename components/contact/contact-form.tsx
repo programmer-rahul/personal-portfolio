@@ -45,7 +45,7 @@ export default function ContactForm() {
           subject: formValues.subject,
           message: formValues.message,
         },
-        { publicKey },
+        publicKey,
       );
       console.log("Email send successfully", response);
     } catch (error) {
