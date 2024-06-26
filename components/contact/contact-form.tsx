@@ -20,6 +20,8 @@ export default function ContactForm() {
     message: null,
   });
 
+  const [isCooldown, setIsCooldown] = useState(false);
+
   const handleSendEmail = async (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
   ) => {
@@ -47,9 +49,16 @@ export default function ContactForm() {
         },
         publicKey,
       );
-      console.log("Email send successfully", response);
+      // console.log("Email send successfully");
+
+      // clear inputs
+      setFormValues({ email: "", message: "", subject: "" });
+
+      // set 30 second cooldown
+      setIsCooldown(true);
+      setTimeout(() => setIsCooldown(false), 30000);
     } catch (error) {
-      console.log("error in email sending", error);
+      // console.log("error in email sending");
     }
   };
 
