@@ -1,5 +1,6 @@
 "use client";
 
+import { RESUME_LINK } from "@/lib/constants";
 import Button from "../ui/button";
 
 export default function ContactAndResumeBtns() {
@@ -8,7 +9,13 @@ export default function ContactAndResumeBtns() {
       <a href="#contact">
         <Button type="secondary" text="Contact Me" icon="/svg/arrow.svg" />
       </a>
-      <Button type="primary" text="Download Resume" icon="/svg/download.svg" />
+      <a href={RESUME_LINK} target="_blank">
+        <Button
+          type="primary"
+          text="Download Resume"
+          icon="/svg/download.svg"
+        />
+      </a>
     </div>
   );
 }

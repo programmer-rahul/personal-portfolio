@@ -27,6 +27,8 @@ export default function ContactForm() {
   ) => {
     event.preventDefault();
 
+    if (isCooldown) return;
+
     const { isValid, error } = contactFormValidation(formValues);
 
     setFormErrors(error);
@@ -39,7 +41,7 @@ export default function ContactForm() {
     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 
     try {
-      const response = await emailjs.send(
+      await emailjs.send(
         serviceId,
         templateId,
         {

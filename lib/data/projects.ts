@@ -10,7 +10,7 @@ const PROJECTS: Projects = [
     imageUrl: "/projects/project1/main.png",
     urls: {
       repo: GITHUB_LINK + "/devsync",
-      liveDemo: "https://devsync-phi.vercel.app",
+      liveDemo: "https://syncdev.vercel.app",
     },
   },
   {
