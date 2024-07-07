@@ -27,6 +27,7 @@ const config: Config = {
       fontFamily: {
         primary: "var(--font-primary)",
         secondary: "var(--font-secondary)",
+        heading: "var(--font-heading)",
       },
     },
   },
