@@ -13,23 +13,21 @@ export const metadata: Metadata = {
 };
 
 const cubonoFont = localFont({
-  src: "./font/Cubano.ttf",
+  src: "./fonts/Cubano.ttf",
   weight: "900",
   display: "swap",
   variable: "--font-heading",
 });
 
-const primaryFont = Sofia_Sans({
-  weight: "variable",
+const primaryFont = localFont({
+  src: "./fonts/Exo2.ttf",
   display: "swap",
-  subsets: ["latin"],
   variable: "--font-primary",
 });
 
-const secondaryFont = Playpen_Sans({
-  weight: "variable",
+const secondaryFont = localFont({
+  src: "./fonts/SpaceGrotesk.ttf",
   display: "swap",
-  subsets: ["latin"],
   variable: "--font-secondary",
 });
 
