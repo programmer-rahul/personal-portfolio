@@ -21,7 +21,7 @@ export default function FormInput({
     <div>
       <label
         htmlFor={htmlFor}
-        className="text-base capitalize text-primary-foreground md:text-xl"
+        className="text-base capitalize text-primary-foreground md:text-xl 2xl:text-2xl"
       >
         {label}
       </label>
@@ -30,7 +30,7 @@ export default function FormInput({
         value={value}
         id={htmlFor}
         onChange={onChange}
-        className="w-full rounded-md border bg-transparent p-1 text-base text-primary-foreground outline-none focus:border-main md:text-xl"
+        className="w-full rounded-md border bg-transparent p-1 text-base text-primary-foreground outline-none focus:border-main md:text-xl 2xl:p-2"
       />
     </div>
   );

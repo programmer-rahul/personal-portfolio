@@ -10,7 +10,7 @@ interface FormTextAreaProps {
 export default function FormTextArea({ value, onChange }: FormTextAreaProps) {
   return (
     <div>
-      <label htmlFor="message" className="text-base md:text-xl text-primary-foreground">
+      <label htmlFor="message" className="text-base md:text-xl text-primary-foreground 2xl:text-2xl">
         Message
       </label>
       <textarea
