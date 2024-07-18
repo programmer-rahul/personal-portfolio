@@ -1,0 +1,26 @@
+/* NavBar.module.css */
+.navLink {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .navLink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    height: 2.7px;
+    background: rgba(var(--typewriter));
+    transition: all 0.5s;
+  }
+  
+  .navLink:hover::after {
+    width: 100%;
+  }
+  
+  .navLink:hover {
+    color: rgba(var(--main)); /* Replace 'blue' with your desired hover color */
+  }
