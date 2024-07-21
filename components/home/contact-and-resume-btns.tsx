@@ -6,9 +6,6 @@ import Button from "../ui/button";
 export default function ContactAndResumeBtns() {
   return (
     <div className="flex gap-2 sm:gap-5">
-      <a href="#contact">
-        <Button type="secondary" text="Contact Me" icon="/svg/arrow.svg" />
-      </a>
       <a href={RESUME_LINK} target="_blank">
         <Button
           type="primary"
