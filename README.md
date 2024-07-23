@@ -72,4 +72,4 @@ const RESUME_LINK = "YOUR RESUME LINK HERE";
 
 ## 💖 Show Support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if you liked this project!
