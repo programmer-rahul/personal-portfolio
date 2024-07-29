@@ -10,7 +10,7 @@
 
 ## View live preview **[here](https://programmer-rahul.vercel.app)**.
 
-## Sections 📚
+## 📚 Sections
 
 - Hero Section ✨
 - About Section 👤
