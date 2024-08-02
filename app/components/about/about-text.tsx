@@ -7,7 +7,7 @@ export default function AboutText() {
           passionate and seasoned programmer
         </span>{" "}
         deeply immersed in the world of technology. With a strong foundation in
-        <span className="text-typewriter">JavaScript</span>, I excel in crafting
+        <span className="text-typewriter"> JavaScript</span>, I excel in crafting
         dynamic and innovative solutions across various web application
         frameworks. I have a keen interest in exploring diverse technologies and
         thrive on solving complex problems.
