@@ -12,7 +12,7 @@ export default function Project({
   return (
     <div
       className={cn(
-        "flex w-full flex-col rounded-lg border bg-[#1e293b] lg:w-[48%]",
+        "flex w-full flex-col rounded-lg border bg-[#1e293b] lg:w-[48%] group opacity-90 hover:opacity-100 transition-opacity",
       )}
     >
       <ProjectTitleButtons />

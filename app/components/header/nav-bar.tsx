@@ -1,10 +1,10 @@
 import Link from "next/link";
-import styles from './NavBar.module.css'; // Adjust the path as necessary
+import styles from "./NavBar.module.css";
 
 export default function NavBar() {
   return (
     <nav>
-      <ul className="z-10 gap-14 text-xl text-secondary-foreground hidden md:flex">
+      <ul className="z-10 hidden gap-14 text-xl text-secondary-foreground md:flex">
         <li>
           <Link href="/">
             <span className={styles.navLink}>Home</span>
