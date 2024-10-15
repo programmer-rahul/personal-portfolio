@@ -1,5 +1,6 @@
 import ContactAndResumeBtns from "@/components/home/contact-and-resume-btns";
 import TypeWriterText from "./type-writer-text";
+import LanguagesImageBg from "../ui/languages-image-bg";
 
 export default function IntroPanel() {
   return (
@@ -15,7 +16,7 @@ export default function IntroPanel() {
       </p>
       <ContactAndResumeBtns />
 
-      {/* <LanguagesImageBg /> */}
+      <LanguagesImageBg />
     </div>
   );
 }

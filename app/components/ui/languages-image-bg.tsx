@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function LanguagesImageBg() {
   return (
-    <div className="absolute top-0 -z-10 h-full w-full scale-150">
+    <div className="absolute top-0 -z-10 h-full w-full scale-125 hidden xl:block">
       <div className="relative h-full w-full">
         <Image
           src="/skills/javascript.svg"
           width={30}
           height={30}
           alt="language"
-          className="absolute left-10 top-20 -rotate-12 grayscale transition hover:cursor-pointer hover:grayscale-0"
+          className="absolute left-10 top-1/3 -rotate-12 grayscale transition hover:cursor-pointer hover:grayscale-0"
         />
         <Image
           src="/skills/nextjs.svg"
