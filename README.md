@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to Personal-portfolio 👋</h1>
 
 ### Showcase your web development skills and projects with a sleek portfolio built using Next.js and Tailwind CSS.
-
+> 🎨 **WordPress Version Available:** Check out [WordPress theme version](https://github.com/AmmarSAA/Web-Developer-Portfolio-Wordpress-Theme)!
 <p align="center">
   <kbd>
     <img src="https://github.com/programmer-rahul/personal-portfolio/blob/main/public/logo/logo.png"></img>
